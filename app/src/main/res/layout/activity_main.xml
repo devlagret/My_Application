@@ -1,54 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/linearLayout1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:layout_weight="1">
-    <TextView
-        android:layout_width="100dp"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/gradient" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F44336"
-        android:text="Anak1"
-        android:textSize="30sp" />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="#FFC107"
-        android:text="Anak2"
-        android:textSize="30sp" />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="#CDDC39"
-        android:text="Anak3"
-        android:textSize="30sp" />
-    <LinearLayout
-        android:layout_height="0dp"
-        android:layout_width="wrap_content"
-        tools:context=".MainActivity"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-        <TextView
-            android:layout_width="100dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#4CAF50"
-            android:text="Anak4"
-            android:textSize="30sp" />
-        <TextView
-            android:layout_width="100dp"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:id="@+id/gbr1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="16dp"
+                    android:src="@drawable/plus" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/gbr1"
+                    android:layout_alignTop="@+id/gbr1"
+                    android:layout_alignRight="@+id/gbr1"
+                    android:layout_alignBottom="@+id/gbr1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Add Item"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:id="@+id/gbr1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="10dp"
+                    android:src="@drawable/stok" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/gbr1"
+                    android:layout_alignTop="@+id/gbr1"
+                    android:layout_alignRight="@+id/gbr1"
+                    android:layout_alignBottom="@+id/gbr1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Inventory"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:id="@+id/gbr1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="18dp"
+                    android:src="@drawable/cs" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/gbr1"
+                    android:layout_alignTop="@+id/gbr1"
+                    android:layout_alignRight="@+id/gbr1"
+                    android:layout_alignBottom="@+id/gbr1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="support"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:id="@+id/gbr1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="30dp"
+                    android:src="@drawable/out" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/gbr1"
+                    android:layout_alignTop="@+id/gbr1"
+                    android:layout_alignRight="@+id/gbr1"
+                    android:layout_alignBottom="@+id/gbr1"
+                    android:layout_marginTop="90dp"
+                    android:gravity="center"
+                    android:text="Exit"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#00BCD4"
-            android:text="Anak5"
-            android:textSize="30sp" />
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:background="#C3A5F8"
-            android:text="Anak6"
-            android:textSize="30sp" />
-    </LinearLayout>
-</LinearLayout>
+            android:layout_toEndOf="@id/ll1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:id="@+id/gbr1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="25dp"
+                    android:src="@drawable/scan" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/gbr1"
+                    android:layout_alignTop="@+id/gbr1"
+                    android:layout_alignRight="@+id/gbr1"
+                    android:layout_alignBottom="@+id/gbr1"
+                    android:layout_marginTop="102dp"
+                    android:gravity="center"
+                    android:text="Scan Item"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:id="@+id/gbr1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="25dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/gbr1"
+                    android:layout_alignTop="@+id/gbr1"
+                    android:layout_alignRight="@+id/gbr1"
+                    android:layout_alignBottom="@+id/gbr1"
+                    android:layout_marginTop="94dp"
+                    android:gravity="center"
+                    android:text="Profile"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/layout_bg">
+
+                <ImageView
+                    android:id="@+id/gbr1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/seting" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="64dp"
+                    android:layout_height="23dp"
+                    android:layout_alignLeft="@+id/gbr1"
+                    android:layout_alignTop="@+id/gbr1"
+                    android:layout_alignRight="@+id/gbr1"
+                    android:layout_alignBottom="@+id/gbr1"
+                    android:layout_marginTop="94dp"
+                    android:gravity="center"
+                    android:text="Settings"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
